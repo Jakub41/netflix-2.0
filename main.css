@@ -1,0 +1,15 @@
+/* Global CSS */
+html,
+body {
+    height: 100%;
+}
+
+/* Landing animation BG */
+body {
+    background: url("https://media.giphy.com/media/XCopjiQ1O29sA/source.gif")
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
