@@ -1,7 +1,35 @@
 /* Global CSS */
+@import url('https://fonts.googleapis.com/css?family=Creepster&display=swap');
+:root {
+    --linkUnderlineColor: #ff9800;
+}
+
 html,
 body {
     height: 100%;
+}
+
+a {
+    background: linear-gradient(
+        to bottom,
+        var(--mainColor) 0%,
+        var(--mainColor) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    background: none;
+    color: red;
+    font-family: "Creepster", serif;
+    font-size: 1.2em;
+    letter-spacing: 10px;
+    line-height: 0.75em;
+    text-decoration: none;
 }
 
 /* Landing animation BG */
@@ -12,4 +40,98 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/* Animation */
+#n-animation {
+    display: none;
+    position: absolute;
+}
+
+/* Welcome Card */
+.card {
+    width: 430px;
+    height: 50vh;
+    background: linear-gradient(to bottom, #000, rgba(255, 0, 0, 0));
+}
+
+.netflix {
+    position: relative;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+    transform: scale(0.8);
+    left: 8%;
+}
+
+.netflix:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    width: 100%;
+    height: 120px;
+    background: #000;
+    z-index: 2;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: scaleX(1.5);
+}
+
+.netflix:after,
+h3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #000, #000);
+    z-index: 3;
+    animation: animate 4s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -400%;
+    }
+}
+.netflix span {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background: #fff;
+}
+
+.netflix span:nth-child(1) {
+    background: #b00612;
+    left: 0;
+}
+.netflix span:nth-child(2) {
+    background: #e50815;
+    left: 121px;
+    z-index: 1;
+    transform-origin: top-left;
+    transform: skewX(24deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.netflix span:nth-child(3) {
+    background: #b00612;
+    right: 0;
+}
+h3.card-title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: arial;
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    overflow: hidden;
 }
