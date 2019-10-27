@@ -1,3 +1,141 @@
-body{
-    background-color: red;
+@import url("https://fonts.googleapis.com/css?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Butcherman&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Nosifer", cursive;
+    font-size: 1.5em;
+}
+
+/* Animation GLitch */
+.animation {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1487174244970-cd18784bb4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80");
+}
+.animation:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.unsplash.com/photo-1487174244970-cd18784bb4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2252&q=80");
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+}
+.animation:hover:before {
+    animation: animate 0.2s linear infinite;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+        filter: hue-rotate(0deg);
+    }
+    10% {
+        background-position: 5px 0;
+    }
+    20% {
+        background-position: -5px 0;
+    }
+    30% {
+        background-position: 15px 0;
+    }
+    40% {
+        background-position: -5px 0;
+    }
+    50% {
+        background-position: -25px 0;
+    }
+    60% {
+        background-position: -50px 0;
+    }
+    70% {
+        background-position: 0 -20px;
+    }
+    80% {
+        background-position: -60px -20px;
+    }
+    81% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 0;
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Navbar */
+.navbar-brand {
+    color: #a00000 !important;
+    font-size: 3em;
+}
+
+.navbar-nav li a {
+    color: #ffffff !important;
+    cursor: url("../img/hand.png"), auto;
+}
+
+.navbar-nav li a:hover {
+    background: none;
+    color: red !important;
+    font-family: "Creepster", serif;
+    font-size: 3em;
+    letter-spacing: 10px;
+    line-height: 0.75em;
+    text-decoration: none;
+}
+
+.navbar-toggler img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Second Nav */
+.icon {
+    color: orange;
+    margin-right: 12px;
+    font-size: 1.5em;
+    cursor: url("../img/hand.png"), auto;
+}
+
+#nav-2 .btn-group {
+    padding-right: 30px;
+}
+
+#nav-2 h3 {
+    margin-left: 2%;
+    font-family: "Butcherman", cursive;
+    font-size: 2em;
+    color: #df5302;
+}
+
+/* Blood animation */
+
+/* title */
+.heading {
+    height: 10em;
+    position: relative;
+}
+.heading h1 {
+    margin: 0;
+    font-size: 5em;
+    font-family: "Nosifer", cursive;
+    color: rgb(119, 110, 110, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>NetFlix - Load </title>
+    <title>HorFlix</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,27 +13,77 @@
     <!-- FontAwesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/home.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="../assets/img/ghost.png"/>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Hello</h1>
-    </div>
+    <!-- BG animation -->
+    <main class="animation">
+        <!-- Full width navbar 1 -->
+        <nav class="navbar navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
+            <a class="navbar-brand" href="#">Netflix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler">
+                    <img
+                        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM0Ni40OTcgMzQ2LjQ5NyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzQ2LjQ5NyAzNDYuNDk3OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzY4QUEwMDsiIGQ9Ik0xNjcuMjQ5LDcwLjk3YzAsMCw0LjQtMzUuNiwyMS42LTQ5LjZzMjkuMi0xNS4yLDI5LjItMTUuMmwxOS4yLDIwLjRjMCwwLTQ5LjYsMTUuMi01Mi44LDYxLjIgIEMxODEuNjQ5LDEzNC4xNywxNjcuMjQ5LDcwLjk3LDE2Ny4yNDksNzAuOTd6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGMjc1MDM7IiBkPSJNMzM5LjI0OSwxNDQuOTdjMTQuOCw0NS4yLDUuNiw5OS4yLTI0LjgsMTQwLjhjLTExLjYsMTYuNC0yNS42LDI5LjItNDAuNCwzNy42ICBjLTE0LjgsOC44LTMwLjQsMTMuMi00NiwxMy4yYy04LDAtMTYuNC0xLjItMjQuNC00bC0yLjgtMC44bC0yLjQsMS42Yy0xNC40LDkuNi0zNCw5LjItNDguNC0wLjhsLTIuNC0xLjZsLTIuOCwwLjggIGMtOC44LDMuMi0xNy42LDQuOC0yNi44LDQuOGMtMzEuMiwwLTYyLjgtMTguOC04Ni40LTUxLjJjLTMwLTQxLjYtMzkuNi05NS42LTI0LjgtMTQwLjhjMTguOC01NS4yLDYwLjgtNjcuMiw5Mi44LTY3LjIgIGMyNS4yLDAsNDUuMiw3LjIsNDUuNiw3LjJsMi44LDAuOGwyLjQtMS42YzE0LjQtMTAsMzQtMTAuNCw0OC40LTAuOGwyLjQsMS42bDIuNC0wLjhjNi40LTIsMjIuOC02LjQsNDIuOC02LjQgIEMyNzguODQ5LDc3LjM3LDMyMC44NDksODkuMzcsMzM5LjI0OSwxNDQuOTd6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNNzkuMjQ5LDEzNi45N2w3My4yLDMwLjhDMTUyLjA0OSwxNjguMTcsMTA0LjA0OSwyMTYuMTcsNzkuMjQ5LDEzNi45N3oiLz4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRDM1QzAyOyIgZD0iTTE5OC44NDksMzMzLjc3bDIuNC0xLjZjLTEuMiwwLjgtMiwxLjItMy4yLDJDMTk4LjQ0OSwzMzQuMTcsMTk4Ljg0OSwzMzMuNzcsMTk4Ljg0OSwzMzMuNzd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRDM1QzAyOyIgZD0iTTIwMS4yNDksMzMyLjE3bDIuOCwwLjhjOCwyLjQsMTYsNCwyNC40LDRjMTUuNiwwLDMxLjYtNC44LDQ2LTEzLjJjMTQuOC04LjgsMjguNC0yMS42LDQwLjQtMzcuNiAgIGMzMC00MS42LDM5LjYtOTUuNiwyNC44LTE0MC44Yy0xOC44LTU2LTYwLjgtNjgtOTIuOC02OGMtMjAsMC0zNi44LDQuNC00Mi44LDYuNGwtMi44LDAuOGMwLDAsNDcuMiwxNi44LDcwLjQsNTIuNCAgIEMyOTguODQ5LDE3OC41NywzMTQuNDQ5LDI4NS43NywyMDEuMjQ5LDMzMi4xN3oiLz4KPC9nPgo8Zz4KCTxwb2x5Z29uIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBwb2ludHM9IjI1Ny4yNDksMjY0Ljk3IDI0My42NDksMjUwLjU3IDE5OS4yNDksMjc5Ljc3IDE3My4yNDksMjU4LjE3IDE0Ny4yNDksMjc5Ljc3ICAgIDEwMi44NDksMjUwLjU3IDg4Ljg0OSwyNjQuOTcgNDQuNDQ5LDE5Ni41NyA4OC44NDksMjI0Ljk3IDEwMi44NDksMjEwLjU3IDE0Ny4yNDksMjM5Ljc3IDE3My4yNDksMjE4LjE3IDE5OS4yNDksMjM5Ljc3ICAgIDI0My42NDksMjEwLjU3IDI1Ny4yNDksMjI0Ljk3IDMwMi4wNDksMTk2LjU3ICAiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMyMzFGMjA7IiBkPSJNMjcxLjY0OSwxMzYuOTdsLTczLjIsMzAuOEMxOTguNDQ5LDE2OC4xNywyNDYuODQ5LDIxNi4xNywyNzEuNjQ5LDEzNi45N3oiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Navbar 2 -->
+        <section class="row" id="nav-2">
+            <div class="col-md-8">
+                <h3>TV Shows</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="btn-group float-right" role="group">
+                    <i class="fas fa-th-list icon"></i>
+                    <i class="fas fa-th icon"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Container -->
+        <div class="container">
+            <div class="heading">
+                <h1>HorFlix</h1>
+            </div>
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.animation -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <!-- Custom JS default -->
     <script src="../assets/js/home.js"></script>
 </body>
